@@ -13,6 +13,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </style>
 <body class="w3-content" style="max-width:1200px">
 
+<script type="text/javascript" src="js/main.js"></script>
+
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
@@ -28,6 +30,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <a href="#" class="w3-bar-item w3-button">Caramel Charm</a>
         <a href="#" class="w3-bar-item w3-button">Chilli Chocolate</a>
         <a href="#" class="w3-bar-item w3-button">Dark Almond Delight</a>
+        <a href="#" class="w3-bar-item w3-button">Dark Almond Delight Square</a>
+        <a href="#" class="w3-bar-item w3-button">Date Exotica</a>
+        <a href="#" class="w3-bar-item w3-button">Milk Almond Delight</a>
+        <a href="#" class="w3-bar-item w3-button">Milk Almond Delight Square</a>
+        <a href="#" class="w3-bar-item w3-button">White Almond Delight</a>
+        <a href="#" class="w3-bar-item w3-button">White Almond Delight Square</a>
       </div>
     <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Packs<i class="fa fa-caret-down"></i>
@@ -36,6 +44,11 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <a href="#" class="w3-bar-item w3-button">Draw Box 12</a>
         <a href="#" class="w3-bar-item w3-button">Gold Box</a>
         <a href="#" class="w3-bar-item w3-button">Window Box</a>
+        <a href="#" class="w3-bar-item w3-button">Box of 6</a>
+        <a href="#" class="w3-bar-item w3-button">Box of 12</a>
+        <a href="#" class="w3-bar-item w3-button">Celebration</a>
+        <a href="#" class="w3-bar-item w3-button">Pillow Almond Delight</a>
+        <a href="#" class="w3-bar-item w3-button">Tin Box</a>
       </div>
     <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Custom Box <i class="fa fa-caret-down"></i>
@@ -44,6 +57,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <a href="#" class="w3-bar-item w3-button">Diwali</a>
         <a href="#" class="w3-bar-item w3-button">Royal Tin Box</a>
         <a href="#" class="w3-bar-item w3-button">Class Box</a>
+        <a href="#" class="w3-bar-item w3-button">Celebration Box</a>
       </div>
   </div>
   <!--
@@ -227,52 +241,6 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </div>
   </div>
 </div>
-
-<script>
-// Accordion
-function myAccFunc1() {
-  var x = document.getElementById("demoAcc1");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-function myAccFunc2() {
-  var x = document.getElementById("demoAcc2");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-function myAccFunc3() {
-  var x = document.getElementById("demoAcc3");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-
-// Click on the "chocolates" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
-
-
-// Open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-</script>
 
 </body>
 </html>
