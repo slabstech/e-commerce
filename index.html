@@ -3,7 +3,9 @@
 <title>A & A Chocolates</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" href="w3images/home/logo_cream.jpg">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,12 +23,18 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
     <h3 class="w3-wide"><b>A & A Chocolates</b></h3>
   </div>
+
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Categories
+    </a>
+
       <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Flavors<i class="fa fa-caret-down"></i>
     </a>
       <div id="demoAcc1" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <!--  <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Celebration</a> -->
+
         <a href="#" class="w3-bar-item w3-button">Caramel Charm</a>
         <a href="#" class="w3-bar-item w3-button">Chilli Chocolate</a>
         <a href="#" class="w3-bar-item w3-button">Dark Almond Delight</a>
@@ -37,10 +45,16 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <a href="#" class="w3-bar-item w3-button">White Almond Delight</a>
         <a href="#" class="w3-bar-item w3-button">White Almond Delight Square</a>
       </div>
+
+    <div id="generated" >
+
+    </div>
+
     <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Packs<i class="fa fa-caret-down"></i>
     </a>
       <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+<!--
         <a href="#" class="w3-bar-item w3-button">Draw Box 12</a>
         <a href="#" class="w3-bar-item w3-button">Gold Box</a>
         <a href="#" class="w3-bar-item w3-button">Window Box</a>
@@ -49,15 +63,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <a href="#" class="w3-bar-item w3-button">Celebration</a>
         <a href="#" class="w3-bar-item w3-button">Pillow Almond Delight</a>
         <a href="#" class="w3-bar-item w3-button">Tin Box</a>
+-->
       </div>
     <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Custom Box <i class="fa fa-caret-down"></i>
     </a>
       <div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-        <a href="#" class="w3-bar-item w3-button">Diwali</a>
+<!--        <a href="#" class="w3-bar-item w3-button">Diwali</a>
         <a href="#" class="w3-bar-item w3-button">Royal Tin Box</a>
         <a href="#" class="w3-bar-item w3-button">Class Box</a>
         <a href="#" class="w3-bar-item w3-button">Celebration Box</a>
+-->
       </div>
   </div>
   <!--
@@ -68,7 +84,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <div class="w3-bar-item w3-padding-24 w3-wide"><img src="w3images/home/logo_cream.jpg" alt="A & A Chocolates" height="42" width="42"/></div>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
 </header>
 
@@ -224,7 +240,14 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </footer>
 -->
 
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <div class="w3-black w3-center w3-padding-24">
+    Powered by <a href="https://slabs.tech" title="S Labs" target="_blank" class="w3-hover-opacity">S Labs</a>
+    <br>
+    <a href="https://slabs.tech/site/disclaimer" <title> Disclaimer </title> </a>,
+    <a href="https://slabs.tech/site/credits" <title> Credits </title> </a> 	,
+    <a href="https://slabs.tech/site/privacy" <title> Privacy </title> </a>
+  </div>
 
   <!-- End page content -->
 </div>
@@ -241,6 +264,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </div>
   </div>
 </div>
+<script>
 
+</script>
 </body>
 </html>
