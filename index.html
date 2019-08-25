@@ -31,50 +31,18 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
       <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Flavors<i class="fa fa-caret-down"></i>
-    </a>
+      </a>
       <div id="demoAcc1" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <!--  <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Celebration</a> -->
-
-        <a href="#" class="w3-bar-item w3-button">Caramel Charm</a>
-        <a href="#" class="w3-bar-item w3-button">Chilli Chocolate</a>
-        <a href="#" class="w3-bar-item w3-button">Dark Almond Delight</a>
-        <a href="#" class="w3-bar-item w3-button">Dark Almond Delight Square</a>
-        <a href="#" class="w3-bar-item w3-button">Date Exotica</a>
-        <a href="#" class="w3-bar-item w3-button">Milk Almond Delight</a>
-        <a href="#" class="w3-bar-item w3-button">Milk Almond Delight Square</a>
-        <a href="#" class="w3-bar-item w3-button">White Almond Delight</a>
-        <a href="#" class="w3-bar-item w3-button">White Almond Delight Square</a>
+            <div id="generated" />
       </div>
-
-    <div id="generated" >
-
-    </div>
 
     <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Packs<i class="fa fa-caret-down"></i>
     </a>
       <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-<!--
-        <a href="#" class="w3-bar-item w3-button">Draw Box 12</a>
-        <a href="#" class="w3-bar-item w3-button">Gold Box</a>
-        <a href="#" class="w3-bar-item w3-button">Window Box</a>
-        <a href="#" class="w3-bar-item w3-button">Box of 6</a>
-        <a href="#" class="w3-bar-item w3-button">Box of 12</a>
-        <a href="#" class="w3-bar-item w3-button">Celebration</a>
-        <a href="#" class="w3-bar-item w3-button">Pillow Almond Delight</a>
-        <a href="#" class="w3-bar-item w3-button">Tin Box</a>
--->
+          <div id="generated_2" />
       </div>
-    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      Custom Box <i class="fa fa-caret-down"></i>
-    </a>
-      <div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-<!--        <a href="#" class="w3-bar-item w3-button">Diwali</a>
-        <a href="#" class="w3-bar-item w3-button">Royal Tin Box</a>
-        <a href="#" class="w3-bar-item w3-button">Class Box</a>
-        <a href="#" class="w3-bar-item w3-button">Celebration Box</a>
--->
-      </div>
+    
   </div>
   <!--
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
@@ -99,7 +67,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
+    <!--
     <p class="w3-left">Chocolates</p>
+  -->
     <p class="w3-right">
       <i class="fa fa-shopping-cart w3-margin-right"></i>
       <i class="fa fa-search"></i>
@@ -265,7 +235,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
 </div>
 <script>
-
+onSiteLoad();
 </script>
 </body>
 </html>
