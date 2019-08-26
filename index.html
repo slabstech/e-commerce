@@ -29,20 +29,22 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       Categories
     </a>
 
-      <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      <a onclick="displaySideBar(1)" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Flavors<i class="fa fa-caret-down"></i>
       </a>
       <div id="demoAcc1" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-            <div id="generated" />
+            <div id="generated" >
+            </div>
       </div>
 
-    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    <a onclick="displaySideBar(2)" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Packs<i class="fa fa-caret-down"></i>
     </a>
       <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-          <div id="generated_2" />
+          <div id="generated_2" >
+          </div>
       </div>
-    
+
   </div>
   <!--
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
@@ -93,61 +95,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Product grid -->
   <div class="w3-row w3-grayscale">
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="w3images/products/choc_flavors/caramel_charm.jpg" style="width:100%">
-        <p>Caramel Charm<br><b>$24.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="w3images/products/choc_flavors/chilli_chocolate.jpg" style="width:100%">
-        <p>Chilli Chocolate<br><b>$19.99</b></p>
-      </div>
+
+    <div id="generated_products" >
     </div>
 
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="w3images/products/choc_flavors/date_exotica.jpg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">New</span>
-          <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <p>Date Exotica<br><b>$19.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="w3images/products/choc_flavors/white_almond_delight.jpg" style="width:100%">
-        <p>White Almond Delight<br><b>$20.50</b></p>
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="w3images/products/choc_packs/celebration.jpg" style="width:100%">
-        <p>Celebration Pack<br><b>$20.50</b></p>
-      </div>
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="w3images/products/choc_packs/tin_box.jpg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">Sale</span>
-          <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <p>Design Box<br><b class="w3-text-red">$14.99</b></p>
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="w3images/products/choc_packs/window_box.jpg" style="width:100%">
-        <p>Window Box<br><b>$14.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="w3images/products/choc_packs/draw_box_12.jpg" style="width:100%">
-        <p>Draw Box : 12<br><b>$24.99</b></p>
-      </div>
-    </div>
   </div>
 
   <!-- Subscribe section -->
