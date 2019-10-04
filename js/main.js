@@ -1,3 +1,20 @@
+function get_data(){
+  var item_data = '{ \
+    "product" : [ { "name":"Date Exotica", "img_src":"choc_flavors/date_exotica.jpg", "price":"Rs. 75"} \
+        , { "name":"Chilli Chocolate", "img_src":"choc_flavors/chilli_chocolate.jpg", "price":"Rs. 75"} \
+        , { "name":"Caramel Charm", "img_src":"choc_flavors/caramel_charm.jpg", "price":"Rs. 75"} \
+        , { "name":"White Almond Delight", "img_src":"choc_flavors/white_almond_delight.jpg", "price":"Rs. 75"} \
+        , { "name":"Celebration Pack", "img_src":"choc_packs/celebration.jpg", "price":"Rs. 75"} \
+        , { "name":"Design Box", "img_src":"choc_packs/tin_box.jpg", "price":"Rs. 75"} \
+        , { "name":"Window Box", "img_src":"choc_packs/window_box.jpg", "price":"Rs. 75"} \
+        , { "name":"Draw Box : 12", "img_src":"choc_packs/draw_box_12.jpg", "price":"Rs. 75"} ] \
+    , "flavors" : [ "Caramel Charm", "Chilli Chocolate", "Dark Almond Delight",  "Dark Almond Delight Square", "Date Exotica", "Milk Almond Delight", "Milk Almond Delight Square", "White Almond Delight", "White Almond Delight Square"] \
+    , "packs" : [ "Draw Box 12", "Gold Box", "Celebration Box", "Window Box" ] \
+    }'
+
+  return item_data;
+}
+
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
@@ -10,64 +27,42 @@ function w3_close() {
 
 function loadSideBar(){
 
-  var para = document.createElement("sideTags");
-  var para_2 = document.createElement("sideTags2");
+  var div_flavors = document.createElement("sideTags");
+  var div_packs = document.createElement("sideTags2");
 
-  var flavors = [ "Caramel Charm", "Chilli Chocolate", "Dark Almond Delight",  "Dark Almond Delight Square", "Date Exotica", "Milk Almond Delight", "Milk Almond Delight Square", "White Almond Delight", "White Almond Delight Square"];
-  var packs = [ "Draw Box 12", "Gold Box", "Celebration Box", "Window Box" ] ;
+  var items = JSON.parse(get_data());
 
-  var text = "";
-  var text_2 = "";
-  var x,x2;
+  var flavors = "";
+  var packs = "";
 
   var anchorStart = "<a href=\"#\" class=\"w3-bar-item w3-button w3-bar-block w3-hide w3-padding-large w3-medium w3-show\">" ;
   var anchorEnd = "</a> " ;
 
-  for (x in flavors) {
-    text += anchorStart ;
-    text += flavors[x];
-    text += anchorEnd ;
+  for (item in items.flavors){
+    flavors += anchorStart ;
+    flavors += items.flavors[item];
+    flavors += anchorEnd ;
   }
 
-  for (x2 in packs) {
-    text_2 += anchorStart ;
-    text_2 += packs[x2];
-    text_2 += anchorEnd ;
+  for (item in items.packs) {
+    packs += anchorStart ;
+    packs += items.packs[item];
+    packs += anchorEnd ;
   }
 
-  para.innerHTML = text;
-  document.getElementById("generated").appendChild(para);
+  div_flavors.innerHTML = flavors;
+  document.getElementById("generated_flavors").appendChild(div_flavors);
 
-  para_2.innerHTML = text_2;
-  document.getElementById("generated_2").appendChild(para_2);
+  div_packs.innerHTML = packs;
+  document.getElementById("generated_packs").appendChild(div_packs);
 }
 
 function loadProducts(){
 
   var para = document.createElement("sideProducts");
-
-  var item_data = '{ "choc1" : { "name":"Date Exotica", "img_src":"choc_flavors/date_exotica.jpg", "price":"Rs. 75"} \
-    , "choc2" : { "name":"Chilli Chocolate", "img_src":"choc_flavors/chilli_chocolate.jpg", "price":"Rs. 75"} \
-    ,"choc3" : { "name":"Caramel Charm", "img_src":"choc_flavors/caramel_charm.jpg", "price":"Rs. 75"} \
-    ,"choc4" : { "name":"White Almond Delight", "img_src":"choc_flavors/white_almond_delight.jpg", "price":"Rs. 75"} \
-    ,"choc5" : { "name":"Celebration Pack", "img_src":"choc_packs/celebration.jpg", "price":"Rs. 75"} \
-    ,"choc6" : { "name":"Design Box", "img_src":"choc_packs/tin_box.jpg", "price":"Rs. 75"} \
-    ,"choc7" : { "name":"Window Box", "img_src":"choc_packs/window_box.jpg", "price":"Rs. 75"} \
-    ,"choc8" : { "name":"Draw Box : 12", "img_src":"choc_packs/draw_box_12.jpg", "price":"Rs. 75"} }'
-
-  var mydata = JSON.parse(item_data);
-  //console.log(mydata)
-
-/*  for (product in mydata)
-  {
-    console.log(product);
-  }
-*/
+  var items = JSON.parse(get_data());
 
   var i=0;
-  var product_image = [ "choc_flavors/date_exotica.jpg", "choc_flavors/chilli_chocolate.jpg", "choc_flavors/caramel_charm.jpg", "choc_flavors/white_almond_delight.jpg", "choc_packs/celebration.jpg", "choc_packs/tin_box.jpg", "choc_packs/window_box.jpg", "choc_packs/draw_box_12.jpg"];
-  var product_name = ["Date Exotica", "Chilli Chocolate", "Caramel Charm", "White Almond Delight", "Celebration Pack", "Design Box", "Window Box", "Draw Box : 12"] ;
-  var product_cost = ["Rs. 75", "Rs. 75", "Rs. 75", "Rs. 75" , "Rs. 75", "Rs. 75" , "Rs. 75", "Rs. 75"];
   var text = "";
   var text_2 = "";
   var x,x2;
@@ -76,7 +71,6 @@ function loadProducts(){
 
   var columndiv = "<div class=\"w3-col l3 s6\">";
   var anchorStart = "<div class=\"w3-container\"> <img style=\"width:100%\" src=\"" ;
-
 
   var anchr2 = "\"><p>";
 
@@ -95,7 +89,8 @@ function loadProducts(){
   var anchr2Add = "<button class=\"w3-button w3-black\">Buy now <i class=\"fa fa-shopping-cart\"></i></button> </div> </div> ";
   */
 
-  for (x in product_image) {
+  for (item in items.product)
+  {
     if(i%2 == 0)
     {
       text += columndiv ;
@@ -103,14 +98,14 @@ function loadProducts(){
     text += anchorStart ;
     text += folderPath ;
 
-    text += product_image[x];
+    text += items.product[item].img_src;
     text += anchr2 ;
 
-    text += product_name[x] ;
+    text += items.product[item].name;
 
     text += anchr3 ;
 
-    text += product_cost[x];
+    text += items.product[item].price;
     text += anchrLast ;
 
     if(i%2 != 0)
