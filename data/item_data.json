@@ -1,3 +1,13 @@
+'{ "choc1" : { "name":"Date Exotica", "img_src":"choc_flavors/date_exotica.jpg", "price":"Rs. 75"} \
+, "choc2" : { "name":"Chilli Chocolate", "img_src":"choc_flavors/chilli_chocolate.jpg", "price":"Rs. 75"} \
+,"choc3" : { "name":"Caramel Charm", "img_src":"choc_flavors/caramel_charm.jpg", "price":"Rs. 75"} \
+,"choc4" : { "name":"White Almond Delight", "img_src":"choc_flavors/white_almond_delight.jpg", "price":"Rs. 75"} \
+,"choc5" : { "name":"Celebration Pack", "img_src":"choc_packs/celebration.jpg", "price":"Rs. 75"} \
+,"choc6" : { "name":"Design Box", "img_src":"choc_packs/tin_box.jpg", "price":"Rs. 75"} \
+,"choc7" : { "name":"Window Box", "img_src":"choc_packs/window_box.jpg", "price":"Rs. 75"} \
+,"choc8" : { "name":"Draw Box : 12", "img_src":"choc_packs/draw_box_12.jpg", "price":"Rs. 75"} }'
+
+
 {
 "categories":[ "Flavors", "Packs" ],
 "Flavors" : [ "Caramel Charm", "Chilli Chocolate", "Dark Almond Delight",  "Dark Almond Delight Square", "Date Exotica", "Milk Almond Delight", "Milk Almond Delight Square", "White Almond Delight", "White Almond Delight Square"] ,
