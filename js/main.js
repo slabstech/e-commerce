@@ -105,9 +105,9 @@ $(document).ready(function(){
 
       text += items.product[item].name;
 
-      text += anchr3 ;
+    //  text += anchr3 ;
 
-      text += items.product[item].price;
+    //  text += items.product[item].price;
       text += anchrLast ;
 
       if(i%2 != 0)
